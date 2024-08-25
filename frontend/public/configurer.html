@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Configurer les capteurs</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="configurer.js" defer></script>
+</head>
+<body>
+  <header>
+    <nav>
+      <a href="index.html">Accueil</a>
+      <a href="configurer.html">Configurer mes capteurs</a>
+      <a href="login.html">Connexion</a>
+      <a href="register.html">Inscription</a>
+      <a href="about.html">À propos</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <h1>Configurer mes capteurs</h1>
+  <form id="config-form">
+    <label for="device-type">Type d'appareil :</label>
+    <select id="device-type" name="device-type" required>
+      <option value="">Choisissez un type</option>
+      <option value="temperature">Température</option>
+      <option value="humidity">Humidité</option>
+      <option value="other">Autre</option>
+    </select>
+    <div id="custom-device-type" class="custom-field" style="display: none;">
+      <label for="custom-device-name">Nom de l'appareil personnalisé :</label>
+      <input type="text" id="custom-device-name" name="custom-device-name" placeholder="Nom de l'appareil">
+    </div>
+    <div id="sensors-container"></div>
+    <button type="button" id="add-sensor">Ajouter un capteur</button>
+    <button type="submit">Sauvegarder</button>
+  </form>
+
+  <footer>
+    <p>&copy; 2024 Votre Société</p>
+  </footer>
+</body>
+</html>

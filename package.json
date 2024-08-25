@@ -1,0 +1,16 @@
+{
+  "name": "frontend",
+  "version": "1.0.0",
+  "description": "Frontend for sensor data management",
+  "main": "index.js",
+  "scripts": {
+    "start": "echo 'Frontend setup complete'"
+  },
+  "dependencies": {
+    "frontend": "file:"
+  },
+  "devDependencies": {},
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
